@@ -5,7 +5,6 @@ Parameters:
   SecurityGroupName:
     Description: EC2 Security Group Name
     Type: String
-    Default: devops-girls-2023
   KeyName:
     Description: EC2 KeyPair Name
     Type: AWS::EC2::KeyPair::KeyName
@@ -21,7 +20,7 @@ Resources:
   Instance:
     Type: AWS::EC2::Instance
     Properties:
-      ImageID: ami-09964535fc01efa5f
+      ImageId: ami-06b79cf2aee0d5c92
       InstanceType: t2.micro
       KeyName: devops-girls-2023
       SecurityGroups:
